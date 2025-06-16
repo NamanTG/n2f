@@ -18,9 +18,7 @@ mcount = 991
 async def auto_forward(bot, message):
     global forwarded, count, mcount
     file_caption = re.sub(r"(❤️‍🔥 Join ~ [ @Moonknight_media ])|(🤖 Join Us \[@BoB_Files1\])|(𝗧𝗛𝗘 𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥 )|(𝙿𝚘𝚠𝚎𝚛e𝚍 𝙱𝚢 ➥  @Theprofessers)|(❤️‍🔥 Join ~ [ @Moonknight_media ])|(\n🔸 Upload By \[@BlackDeath_0\])|(\n❤️‍🔥 Join ~ \[@Moonknight_media\])|(@Ac_Linkzz)|(\n⚡️Join:- \[@BlackDeath_0\]‌‌)|(EonMovies)|(\nJOIN 💎 : @M2LINKS)|@\w+|(_|\- |\.|\+)", " ", str(message.caption))
-    file_caption = f"""<b>{file_caption}</b>\n➖➖➖➖➖➖➖➖➖➖
- <b>Powered By:</b> <a href='https://t.me/MovieTimesTV'><b>Mᴏᴠɪᴇ Tɪᴍᴇs™</b></a>
-➖➖➖➖➖➖➖➖➖➖"""
+    file_caption = f"""<b>{file_caption}</b>"""
     async with lock:
         try:
             if count != 0:
