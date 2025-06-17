@@ -1,7 +1,7 @@
 import asyncio, re
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from vars import FROM_DB, TO_DB, S_TO_DB
+from vars import FROM_DB, TO_DB
 
 import logging
 logger = logging.getLogger(__name__)
@@ -24,7 +24,7 @@ async def auto_forward(bot, message):
             if count != 0:
                 if mcount != 0:
                     await message.copy(
-                            chat_id=int(TO_DB, S_TO_DB),
+                            chat_id=int(TO_DB),
                             caption=file_caption
                         )
                     forwarded += 1
@@ -46,7 +46,7 @@ async def auto_forward(bot, message):
             if count != 0:
                 if mcount != 0:
                     await message.copy(
-                            chat_id=int(TO_DB, STO_DB),
+                            chat_id=int(TO_DB),
                             caption=file_caption
                         )
                     forwarded += 1
