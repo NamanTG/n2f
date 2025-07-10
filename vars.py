@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 SESSION = environ.get("SESSION", "N2 forward bot")
-USER_SESSION = environ.get("USER_SESSION", "") #Pyrogram session dalna hai yahan
+USER_SESSION = environ.get("USER_SESSION", "BQGh3EsAcT8Te3ifi_DJmUoo5OXVdVKGd5XGyNZkyer7xwDmVeSL6rNYVjWHdVR64Llg2s_hUP3INCDHcUyEVesQO-CZXnC8ctMv0-pXTuJAMbaiNMeUw65jMWH0EmD1CXjL-XIvvSrOVA_Bc5i92bN8h9BVlqtGVEpBGEq7ZX5uwZ7DqWPP5vgkxGqnk0cDG-QWu9OAfl5_VqN7WZdZ8TRafgt7-wtgARuLdidBOTq8Kx-yDkRr9x-FMGsArJBdtdQn5hINtudCeSlBNPIvSeCyfuQysO3xwhAFYKGyjrZdQooNk1Bxvq3Z6oAwypKNfOzhBzMalVX43e1Bwsr0D4K-Ri2wqwAAAAF3rvI7AA") #Pyrogram session dalna hai yahan
 API_ID = 25163484
 API_HASH = "145bcbc424d1c1ffe04f3e607ea55c9a"
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
