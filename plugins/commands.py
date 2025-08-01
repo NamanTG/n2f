@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
-@Client.on_message(filters.command("ping"))
+@Client.on_message(filters.command("ping") & filters.user(ADMINS))
 async def ping(_, message):
     start_t = time.time()
     rm = await message.reply_text("...")
@@ -22,7 +22,7 @@ async def ping(_, message):
     await rm.edit(f"Pong!\n{time_taken_s:.3f} ms")
 
     
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("start") & filters.user(ADMINS))
 async def start_message(bot, message):
     btn = [[
             InlineKeyboardButton("About", callback_data="about"),
