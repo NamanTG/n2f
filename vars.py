@@ -22,4 +22,4 @@ TARGET_DB = int(environ.get("TARGET_DB", "-1002155536121"))
 UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://github.com/MandaliWala/File-Forward-Bottermux")
 #Auto Forward vars
 FROM_DB = [int(channel_id) for channel_id in environ.get('FROM_DB', '-1002336648066 -1002248826741 ').split() if re.match(r'^-?\d+$', channel_id)]
-TO_DB = int(environ.get("TO_DB", "-1002046155403"))
+TO_DB = int(environ.get("TO_DB", "-1002888854366"))
