@@ -31,7 +31,7 @@ async def auto_forward(bot, message):
                     count -= 1
                     mcount -= 1
                     logger.info(f"Forwarded {message.caption} from {FROM_DB} to {TO_DB}\nforwarded {forwarded} files")
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(3)
                 else:
                     logger.info(f"⏸️ {forwarded} files sent! Taking a break of 10 minutes...")
                     await asyncio.sleep(600)
@@ -53,7 +53,7 @@ async def auto_forward(bot, message):
                     count -= 1
                     mcount -= 1
                     logger.info(f"Forwarded {message.caption} from {FROM_DB} to {TO_DB}\nforwarded {forwarded} files")
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(3)
                 else:
                     logger.info(f"⏸️ {forwarded} files sent! Taking a break of 10 minutes...")
                     await asyncio.sleep(600)
